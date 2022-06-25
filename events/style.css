@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: #1b1f22d9;
+    font-size: 62.5;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif; 
+
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:rgba(27, 31, 34, 0.85); */
+    background-image: url(/bg.jpg);
+    background-size: 100% 100%;
+}
+
+.maindiv{
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-image: url(/events/pics/pahilopaila.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px white;
+    animation: slider 9s infinite ease;
+}
+.container{
+    width: 55%;
+    height: 32vh;
+    position: absolute;
+    left: 50%;
+    top: 132%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px white;
+    transition: all 0.3 ease;
+}
+.container h1{
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 1.5rem;
+text-align: center;
+}
+.container p{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* #hpahilo{
+    display: none;
+    animation: pahilo 9s infinite ease;
+}
+#ppahilo{
+    display: none;
+    animation: pahilo 9s infinite ease;
+}
+#haces3{
+    display: none;
+    animation: aces4 9s infinite ease;
+    
+}
+#paces3{
+    display: none;
+    animation: aces4 9s infinite ease;
+}
+#haces4{
+    display: none;
+    animation: aces3 9s infinite ease;
+}
+#paces4{
+    display: none;
+    animation: aces3 9s infinite ease;
+} */
+
+  
+
+@keyframes slider{
+    0%{
+              
+     }
+    35%{
+        background-image: url(pics/aces4.0.jpg);
+
+    }
+    75%{
+        background-image: url(pics/aces3.0.jpg)
+
+    }
+    
+}
+/* @keyframes pahilo{
+    0%{
+        display: block;
+    }
+    35%{
+        /* display: ; */
+    /* } */
+    /* 75%{
+        /* display: block; */
+    /* } 
+/* } 
+*/
+@media (max-width:985px){
+    .container h1{
+        font-size: 1.2rem;
+    }
+    .container p{
+        font-size: 0.8rem;
+    }
+    .container{
+        height: 38vh;
+        margin-top: 20px;
+    }
+}

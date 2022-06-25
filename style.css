@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    width: 100%;
+    overflow-x:hidden ;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+.main{
+    min-height: 330vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+nav{
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 5rem 0rem 10rem;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #F4F5FF;
+    backdrop-filter: blur(1px)
+  
+}
+
+nav .ham i{
+    color: #F4F5FF;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+
+}
+.logo{
+    color: #fff;
+    font-size: 3.3rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0rem 1.5rem;
+}
+
+nav ul li a{
+    color: #F4F5FF;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+.register{
+    background-color: #F4F5FF;
+    color: #020304;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.register:hover{
+    background-color: black;
+    color:white ;
+     border-radius: 5px;
+	transition:all 0.1s ease;
+}
+nav ul li a:hover{
+    color: black;
+    background-color: #fff;
+     border-radius: 5px;
+	transition:all 0.1s ease;
+
+    
+}
+#click{
+    display:none;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 90vh;
+    flex-direction: column;
+    text-align: center;
+    /* border-bottom: 2px solid #F4F5FF; */
+    transition: all 0.3 ease;
+    /* backdrop-filter: blur(5px) */
+}
+
+    .profile h1{
+    font-size: 3.5rem;
+    align-items: center;
+    color: #F4F5FF;
+
+}
+
+.profile h2{
+    font-size: 2.5rem;
+    color: #F4F5FF;
+}
+.more{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.about-text{
+    width: 76rem;
+    height: 22rem;
+    border-top: 2px solid #F4F5FF;
+    max-width: 95%;
+    margin: 15px auto;
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: #F4F5FF;
+    transition: all 0.3 ease;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    /* margin-bottom: -15rem; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.tm{
+    width: 76rem;
+    height: 22rem;
+    border-top: 2px solid #F4F5FF;
+    max-width: 95%;
+    margin: 15px auto;
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: #F4F5FF;
+    transition: all 0.3 ease;
+    /* border:2px solid red; */
+}
+.tm h1,h2{
+    padding-top: 10px;
+}
+.logo2{
+    width: 28rem;
+    transition: all 0.3 ease;
+
+}
+
+/* #testionial .about-text p{
+    letter-spacing: 2px;
+} */
+    footer{
+
+    font-family: Ubuntu, sans-serif;
+    bottom: 0px;
+    width: 100%;
+    font-size: 18px;
+    height: 30vh;
+
+}
+
+
+.socialmedia,.contact{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0rem;
+  color: white;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 33%;
+  padding: 10px;
+  height: 15rem;
+  text-align: center;
+  color: white;
+}
+.copyright{
+  text-align: center;
+  color: white;
+  background-color: #020304;
+}
+
+@media (max-width: 985px){
+
+    nav .ham i{
+        display: block;
+    }
+    .logo2{
+        width: 20rem;
+    }
+    #click:checked ~ .ham i:before{
+        content: "\f00d";;
+    }
+    nav ul{
+        position: fixed;
+        top: 8rem;
+        left: -100%;
+        height: 30vh;
+        width: 100%;
+         display: block;
+         text-align: center;
+         transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 2rem 0;
+    }
+    nav ul li a{
+        font-size:2rem ;
+        display: block;
+    }
+    nav .ham i{
+        display: block;
+    }
+    .profile h1{
+        font-size: 2.5rem;
+    }
+    .profile h2{
+        font-size: 1.8rem;
+    }
+    .logo{
+        flex: 1;
+    }
+    .about-text{
+        font-size: 1.5rem;
+    }
+    .tm{
+        font-size: 1.5rem;
+    }
+    footer{
+        font-size: 15px;
+    }
+    .tm h1,h2{
+        font-size: 20px;
+    }
+}
