@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Sofia", sans-serif;
+  
 }
-
-textarea {
-  font-family: "Trirong", serif;
+body{
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 * {
@@ -45,7 +51,6 @@ textarea {
   }
 }
 
-
 .d-grid {
   display: grid;
 }
@@ -73,7 +78,6 @@ button,
 .btn,
 select {
   cursor: pointer;
-  font-family: "Trirong", serif;
 }
 
 a {
@@ -92,7 +96,6 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: "Trirong", serif;
 }
 
 p {
@@ -123,7 +126,7 @@ p {
 h3.global-title {
   font-size: 40px;
   line-height: 45px;
-  color: #16191e;
+  /* color: #16191e; */
   margin-bottom: 50px;
   text-transform: capitalize;
 }
@@ -149,34 +152,30 @@ h3.global-title {
   }
 }
 
-/* / title-styling */
-/* simple contact form */
-.contact-form {
-  background: #2B2B2B;
-}
-
 .field {
   margin-bottom: 20px;
 }
 
 .form-mid {
-  background: rgb(245, 245, 245);
+  /* background: rgb(245, 245, 245); */
   padding: 3rem;
-  border: 1px solid rgb(0, 0, 0);;
-  border-radius: 4px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px white;
 }
 
 .form-mid form input,
 .form-mid form textarea {
-  background: #2B2B2B;
-  /* background-color: #2B2B2B; */
-  border: 2px solid rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  background: transparent;
+  color: white;
   font-size: 16px;
   padding: 12px 15px;
   width: 100%;
-  border-radius: 4px;
+  border: 1px solid white;
+  border-radius: 10px;
   height: 55px;
+  box-shadow: 1px 2px 10px white;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .form-mid form textarea {
@@ -187,8 +186,6 @@ h3.global-title {
 .form-mid form input:focus,
 .form-mid form textarea:focus {
   outline: none;
-  border: 2px solid #000408;
-  background: rgb(245, 245, 245);
   box-shadow: none;
 }
 
@@ -197,9 +194,6 @@ button.btn-contact {
   font-size: 16px;
   padding: 15px 30px;
   margin: 20px auto 0;
-  color: #2B2B2B;
-  background: ##2B2B2B;
-  border-color: ##2B2B2B;
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -209,10 +203,18 @@ button.btn-contact {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px white;
+  font-family: 'Ubuntu', sans-serif;
 
+}
+button.btn-contact:hover{
+  background-color: black;
+  color:white ;
+   border-radius: 10px;
+transition:all 0.1s ease;
+  box-shadow: 1px 2px 10px white;
+}
 @media(max-width: 568px) {
   .form-mid {
     padding: 1.5rem;

@@ -9,6 +9,7 @@
 body{
     width: 100%;
     overflow-x:hidden ;
+    background-color: rgb(0, 0, 0);
 }
 
 html{
@@ -19,13 +20,14 @@ html{
 .main{
     min-height: 330vh;
     width: 100%;
-    background-size: cover;
-    background-position: center;
     margin: 0 auto;
+     
     background-image: url('bg.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+
 }
 
 nav{
@@ -217,60 +219,86 @@ section {
   color: white;
   background-color: #020304;
 }
+p{
+  color: white;
+}
 
 @media (max-width: 985px){
 
-    nav .ham i{
+    nav .ham i {
         display: block;
-    }
-    .logo2{
-        width: 20rem;
-    }
-    #click:checked ~ .ham i:before{
-        content: "\f00d";;
-    }
-    nav ul{
+      }
+    
+      .logo2 {
+        width: 15rem;
+      }
+    
+      #click:checked ~ .ham i:before {
+        content: "\f00d";
+      }
+    
+      nav ul {
         position: fixed;
         top: 8rem;
         left: -100%;
         height: 30vh;
         width: 100%;
-         display: block;
-         text-align: center;
-         transition: all 0.3s ease;
-    }
-    #click:checked ~ ul{
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+    
+      #click:checked ~ ul {
         left: 0%;
-    }
-    nav ul li{
+      }
+    
+      nav ul li {
         margin: 2rem 0;
-    }
-    nav ul li a{
-        font-size:2rem ;
+      }
+    
+      nav ul li a {
+        font-size: 2rem;
         display: block;
-    }
-    nav .ham i{
+      }
+    
+      nav .ham i {
         display: block;
-    }
-    .profile h1{
+      }
+    
+      .profile h1 {
         font-size: 2.5rem;
-    }
-    .profile h2{
+      }
+    
+      .profile h2 {
         font-size: 1.8rem;
-    }
-    .logo{
+      }
+    
+      .logo {
         flex: 1;
-    }
-    .about-text{
-        font-size: 1.5rem;
-    }
-    .tm{
-        font-size: 1.5rem;
-    }
-    footer{
-        font-size: 15px;
-    }
-    .tm h1,h2{
-        font-size: 20px;
-    }
+        font-size: 2.5rem;
+      }
+  
+      .about-text,.tm {
+        font-size: 16px;
+        width: 60%;
+      }
+    
+      .profile {
+        padding: 2rem;
+      }
+    
+      section {
+        height: 190vh;
+      }
 }
+@media only screen and (min-width: 600px) {
+    .about-text, .tm{
+      /* font-size: 16px; */
+      width: 60%;
+    }
+
+  
+    .logo2 {
+      width: 17rem;
+    }
+  }
