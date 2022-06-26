@@ -21,7 +21,6 @@ html{
     min-height: 330vh;
     width: 100%;
     margin: 0 auto;
-     
     background-image: url('bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,8 +38,9 @@ nav{
     position: sticky;
     top: 0;
     border-bottom: 1px solid #F4F5FF;
-    /* backdrop-filter: blur(1px) */
     box-shadow: 1px 2px 10px white;
+    backdrop-filter: blur(25px);
+    content: "";
   
 }
 
@@ -229,23 +229,30 @@ p{
         display: block;
       }
     
-      .logo2 {
-        width: 15rem;
-      }
+    
     
       #click:checked ~ .ham i:before {
         content: "\f00d";
       }
-    
+      
+      .logo {
+        flex: 1;
+        font-size: 2.5rem;
+      }
+  
       nav ul {
         position: fixed;
         top: 8rem;
         left: -100%;
-        height: 30vh;
+        height:auto;
         width: 100%;
         display: block;
         text-align: center;
-        transition: all 0.3s ease;
+        transition: all 0.s ease;
+        /* background: transparent; */
+        backdrop-filter: blur(100px);
+        background: black;
+        content: "";
       }
     
       #click:checked ~ ul {
@@ -273,11 +280,6 @@ p{
         font-size: 1.8rem;
       }
     
-      .logo {
-        flex: 1;
-        font-size: 2.5rem;
-      }
-  
       .about-text,.tm {
         font-size: 16px;
         width: 60%;
@@ -286,7 +288,9 @@ p{
       .profile {
         padding: 2rem;
       }
-    
+      .logo2 {
+        width: 15rem;
+      }
       section {
         height: 190vh;
       }
