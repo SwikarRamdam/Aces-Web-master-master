@@ -132,30 +132,34 @@
     animation: slider 9s infinite ease;
     transition: all 0.3 ease;
 }
-.container{
-    width: 55%;
+.events{
+  width: 40vw;
     height: 32vh;
     position: absolute;
-    left: 50%;
-    top: 132%;
+    /* left: 50%; */
+    top: 74%;
     flex-direction: column;
-    transform: translate(-50%, -50%);
     border-radius: 10px;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-size: 100% 100%;
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px white;
     transition: all 0.3 ease;
 }
-.container h1{
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.events h1{
     color: white;
     border-bottom: 2px solid white;
     font-size: 1.5rem;
 text-align: center;
 }
-.container p{
+.events p{
     color: white;
     font-size: 1rem;
     text-align: center;
@@ -204,30 +208,6 @@ text-align: center;
 
     }
     
-}
-/* @keyframes pahilo{
-    0%{
-        display: block;
-    }
-    35%{
-        /* display: ; */
-    /* } */
-    /* 75%{
-        /* display: block; */
-    /* } 
-/* } 
-*/
-@media (max-width:985px){
-    .container h1{
-        font-size: 1.2rem;
-    }
-    .container p{
-        font-size: 0.8rem;
-    }
-    .container{
-        height: 38vh;
-        margin-top: 20px;
-    }
 }
 
 footer {
@@ -326,3 +306,16 @@ footer {
     
 
   }
+  /* @media (max-width: 435px){
+     .events{
+      width: 30vw;
+        height: 22vh;
+    }
+    .maindiv{
+    width: 40%;
+    height: 400px;
+    }
+    .container{
+
+    } */
+  

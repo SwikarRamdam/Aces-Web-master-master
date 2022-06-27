@@ -130,7 +130,6 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 2px solid red;
   justify-content: center;
   align-items: center;
 }
@@ -317,5 +316,8 @@ p {
 
   nav .ham i {
     display: block;
+  }
+  .wrapper h1{
+    font-size: 35px;
   }
 }
