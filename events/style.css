@@ -1,16 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
   }
-  
-  body {
-    width: 100%;
-    overflow-x: hidden;
-    background-color: rgb(0, 0, 0);
-  }
-  
+    
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -117,7 +113,7 @@
     align-items: center;
     justify-content: center;
     /* background-color:rgba(27, 31, 34, 0.85); */
-    background-image: url(/bg.jpg);
+    /* background-image: url(/bg.jpg); */
     background-size: 100% 100%;
 }
 
@@ -127,12 +123,14 @@
     position: absolute;
     left: 50%;
     top:40%;
+    margin-top: 2rem;
     border-radius: 10px;
     transform: translate(-50%, -50%);
     background-image: url(/events/pics/pahilopaila.jpg);
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px white;
     animation: slider 9s infinite ease;
+    transition: all 0.3 ease;
 }
 .container{
     width: 55%;
@@ -278,53 +276,53 @@ footer {
   .link:hover {
     opacity: 1;
   }
-  
-  @media (max-width: 985px) {
-  
+  @media (max-width: 985px){
+
     nav .ham i {
-      display: block;
-    }
+        display: block;
+      }
+    
+    
+    
+      #click:checked ~ .ham i:before {
+        content: "\f00d";
+      }
+      
+      .logo {
+        flex: 1;
+        font-size: 2.5rem;
+      }
   
-  
-  
-    #click:checked~.ham i:before {
-      content: "\f00d";
-    }
-  
-    .logo {
-      flex: 1;
-      font-size: 2.5rem;
-    }
-  
-    nav ul {
-      position: fixed;
-      top: 8rem;
-      left: -100%;
-      height: auto;
-      width: 100%;
-      display: block;
-      text-align: center;
-      transition: all 0.s ease;
-      /* background: transparent; */
-      backdrop-filter: blur(100px);
-      background: #001c4b;
-      content: "";
-    }
-  
-    #click:checked~ul {
-      left: 0%;
-    }
-  
-    nav ul li {
-      margin: 2rem 0;
-    }
-  
-    nav ul li a {
-      font-size: 2rem;
-      display: block;
-    }
-  
-    nav .ham i {
-      display: block;
-    }
+      nav ul {
+        position: fixed;
+        top: 8rem;
+        left: -100%;
+        height:auto;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.s ease;
+        /* background: transparent; */
+        background: #001c4b;
+        content: "";
+      }
+    
+      #click:checked ~ ul {
+        left: 0%;
+      }
+    
+      nav ul li {
+        margin: 2rem 0;
+      }
+    
+      nav ul li a {
+        font-size: 2rem;
+        display: block;
+      }
+    
+      nav .ham i {
+        display: block;
+      }
+    
+
   }

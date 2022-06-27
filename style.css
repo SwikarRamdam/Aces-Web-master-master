@@ -181,27 +181,26 @@ section {
 
 }
 
-/* #testionial .about-text p{
-    letter-spacing: 2px;
-} */
-    footer{
-
-    font-family: Ubuntu, sans-serif;
-    bottom: 0px;
-    width: 100%;
-    font-size: 18px;
-    height: 30vh;
-
+footer {
+  /* display: flex; */
+  font-family: Ubuntu, sans-serif;
+  bottom: 0px;
+  width: 100%;
+  font-size: 18px;
+  height: 30vh;
+  margin-top: 2rem;
 }
 
-
-.socialmedia,.contact{
+.socialmedia,
+.contact {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0rem;
   color: white;
   justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 .row {
   display: flex;
@@ -271,6 +270,17 @@ p{
         display: block;
       }
     
+      .socialmedia,
+      .contact {
+        display: flex;
+        flex-direction: column;
+      }
+        footer{
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+        }
+        
       .profile h1 {
         font-size: 2.5rem;
       }
@@ -293,15 +303,5 @@ p{
       section {
         height: 190vh;
       }
+ 
 }
-@media only screen and (min-width: 600px) {
-    .about-text, .tm{
-      /* font-size: 16px; */
-      width: 60%;
-    }
-
-  
-    .logo2 {
-      width: 17rem;
-    }
-  }
