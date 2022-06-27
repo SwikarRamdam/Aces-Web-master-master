@@ -45,6 +45,7 @@ nav {
   box-shadow: 1px 2px 10px white;
   backdrop-filter: blur(25px);
   content: "";
+  z-index: 2;
 
 }
 
@@ -121,7 +122,6 @@ nav ul li a:hover {
   text-align: center;
   color: #fff;
   border-bottom: 2px solid #fff;
-
 }
 
 .team {
@@ -146,20 +146,28 @@ nav ul li a:hover {
   position: relative;
   box-shadow: 1px 2px 10px #fff;
   backdrop-filter: blur(10px);
-  z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .team .team_member h3 {
   color: #fff;
   font-size: 26px;
   margin-top: 50px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* position: fixed; */
+  /* text-align: center; */
 }
 
 .team .team_member p.role {
   color: #fff;
-  margin: 12px 0;
+  /* margin: 12px 0; */
   font-size: 12px;
   text-transform: uppercase;
+  /* position: fixed; */
+  /* position: absolute; */
 }
 
 .team .team_member .team_img {
@@ -173,6 +181,9 @@ nav ul li a:hover {
   background: #fff;
   cursor: pointer;
   box-shadow: 1px 2px 10px #fff;
+  display: flex;
+  flex-wrap: wrap;
+  /* z-index: 5; */
 }
 
 .link {
@@ -181,6 +192,7 @@ nav ul li a:hover {
   position: absolute;
   top: 0px;
   opacity: 0;
+  cursor: pointer;
 }
 
 .pp {
@@ -277,9 +289,7 @@ p {
     text-align: center;
     transition: all 0.s ease;
     /* background: transparent; */
-    backdrop-filter: blur(100px);
-    background: black;
-    content: "";
+    background: #001c4b;
   }
 
   #click:checked~ul {

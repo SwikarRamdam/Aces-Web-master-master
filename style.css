@@ -250,8 +250,7 @@ p{
         text-align: center;
         transition: all 0.s ease;
         /* background: transparent; */
-        backdrop-filter: blur(100px);
-        background: black;
+        background: #001c4b;
         content: "";
       }
     
