@@ -106,6 +106,10 @@
     display: none;
   }
   
+  .logo{
+    width: 8.6rem;
+    height: fit-content;
+  }
 .main{
     width: 100vw;
     height: 100vh;
@@ -126,14 +130,14 @@
     margin-top: 2rem;
     border-radius: 10px;
     transform: translate(-50%, -50%);
-    background-image: url(/events/pics/pahilopaila.jpg);
+    background-image: url(/events/pics/training3.jpg);
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px white;
-    animation: slider 9s infinite ease;
-    transition: all 0.3 ease;
+    animation: slider 20s infinite ease-in;
+    transition: all 0.1 ease;
 }
 .events{
-  width: 40vw;
+  width: 40%;
     height: 32vh;
     position: absolute;
     /* left: 50%; */
@@ -145,7 +149,8 @@
     justify-content: center;
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px white;
-    transition: all 0.3 ease;
+    transition: all 0.1s ease;
+    backdrop-filter: blur(10px);
 }
 .container{
   display: flex;
@@ -197,14 +202,26 @@ text-align: center;
 
 @keyframes slider{
     0%{
-              
+      background-image: url(pics/training3.jpg);      
      }
-    35%{
-        background-image: url(pics/aces4.0.jpg);
+    20%{
+        background-image: url(pics/training.jpg);
 
     }
-    75%{
+    40%{
+        background-image: url(pics/training2.jpg)
+
+    }
+    60%{
+        background-image: url(pics/aces4.0.jpg)
+
+    }
+    80%{
         background-image: url(pics/aces3.0.jpg)
+
+    }
+    100%{
+        background-image: url(pics/pahilopaila.jpg)
 
     }
     
